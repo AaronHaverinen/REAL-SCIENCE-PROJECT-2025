@@ -16,6 +16,13 @@ a {
   text-align: center;
 }
 
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  align-self: center;
+}
+
 .exhibits {
     background-color: #ffd9e1;
     padding: 42px;
