@@ -1,24 +1,51 @@
 h1 {
-    color: #ee2e4a;
+    color: #000001;
     text-align: center;
+    font-size: 50px;
 }
 body{
-    background-color: #0075fa;
+    background-color: #9dd5ff;
+}
+p {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .exhibits {
-    background-color: #911911;
+    background-color: #ffd9e1;
     padding: 42px;
     border: 8px soldug #00446f;
   }
   .exhibits h1 {
-    color: #7f7edd;
+    color: #4d4aff;
     margin-bottom: 15px;
     text-align: center;
   }
 
   .exhibit p {
     text-align: left;
-    color: #f7e32a
+    color: #f7e32a;
     font-size: 12px;
+  }
+
+.Exhibit_1 {
+  background-color: #9dd5ff;
+  }
+  .Exhibit_1 h1 {
+    color: #454545;
+    text-align: center;
+    font-size: 50px;
+  }
+  .Exhibit_1 h2 {
+    color: #484848;
+    text-align: center;
+  }
+  .Exhibit_1 p {
+    color: #757575;
+    font-size: 15px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
