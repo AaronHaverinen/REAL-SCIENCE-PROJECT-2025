@@ -27,17 +27,25 @@ img {
     background-color: #ffd9e1;
     padding: 42px;
     border: 8px soldug #00446f;
+    text-align: center;
   }
-  .exhibits h1 {
-    color: #4d4aff;
+  .exhibits ul {
+    text-align: center;
+    color: #000;
+  }
+  .exhibits h2 {
+    color: #090924;
     margin-bottom: 15px;
     text-align: center;
   }
 
   .exhibit p {
-    text-align: left;
+    text-align: center;
     color: #f7e32a;
     font-size: 12px;
+  }
+  .exhibit li {
+    text-align: center;
   }
 
 .Exhibit_1 {

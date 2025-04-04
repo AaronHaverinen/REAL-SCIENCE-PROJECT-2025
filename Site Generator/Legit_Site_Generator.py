@@ -35,7 +35,7 @@ exhibits = [
     {
         "filename": "exhibit 4.html",
         "title": "Annelida",
-        "description": "THe next phylum is Annelida. These animals have bilateral symmetry and you might also know these and worms. The most notable of these are actually earthwarms. Annelida reproduce sexually, though they are both genders at once. They have a closed circulatory system with no heart. Instead, they have bloods through capilaries in their body. Their digestive system is complete, running from mouth to anus. And even though they have no eyes, annelida can still sense the presence of light. Today, I am using the Red Tiger Worm, the <i>Eisenia Andrei</i>, as our example. This earthworm lives around 5 years in usually compost or dung heaps. The diet of this animal is reall yjust any type of decomposing matter, usually produce.",
+        "description": "The next phylum is Annelida. These animals have bilateral symmetry and you might also know these and worms. The most notable of these are actually earthwarms. Annelida reproduce sexually, though they are both genders at once. They have a closed circulatory system with no heart. Instead, they have bloods through capilaries in their body. Their digestive system is complete, running from mouth to anus. And even though they have no eyes, annelida can still sense the presence of light. Today, I am using the Red Tiger Worm, the <i>Eisenia Andrei</i>, as our example. This earthworm lives around 5 years in usually compost or dung heaps. The diet of this animal is reall yjust any type of decomposing matter, usually produce.",
         "images": [
             "Images_of_Animals/Red_Tiger_Worm.png" #Images of Annelida
         ]
@@ -102,10 +102,9 @@ exhibits = [
 
 def generate_index_page(exhibits):
     #Start Code
-    print("Site Generator Process: Starting to create the Index thing")
-
-    #End Code
-    print("Site Generator Process: Index File SUccessfully Created")
+    exhibit_links = ""
+    for exhibit in exhibits:
+        exhibit_links += f'         <li><a href="{exhibit["filename"]}">{exhibit["title"]}</a></li>\n'
     html_content = f"""
         <!DOCTYPE html>
         <html lang="en">
@@ -117,13 +116,17 @@ def generate_index_page(exhibits):
         </html>
 
         <body>
-            <!--map name="MAYBEZOOMAP"-->
-                <!--area shape="circle" coords="50, 20, 123" href="exhibit 1.html" alt="Exhibit1"-->
-            <!--/map-->
             <h1>Welcome To The REAL Sand Die Go Zoo 200</h1>
-            <img src="Images_of_Animals/MAYBEZOOMAP.png">
+            <map name="MAYBEZOOMAP">
+                <area shape="circle" coords="50, 60, 50" href="exhibit 1.html" alt="Exhibit1">
+            </map>
+            
+            <img src="Site Generator/Images of Animals/MAYBEZOOMAP.png">
             <p>Here at the Sand Die Go Zoo 200, we hold animals in captive, 11 to be exact, and you can see them all here. Just follow the map and GO IN ORDER so that you do miss out on valuable information. Click on the correct places on the map above to direct you to different exhibits. Or, you can see the section below if you don't feel like, you know, going <i>treasure hunting</i>.</p>
-            </ul>
+            <section class="exhibits">
+                <h2>Here is a list of exhibits</h2>
+                
+                {exhibit_links}
         <body>
         <html>
     """
