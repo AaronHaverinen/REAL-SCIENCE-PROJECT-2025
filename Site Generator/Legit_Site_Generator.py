@@ -157,14 +157,15 @@ def generate_exhibit_page(exhibit):
     <meta charset="UTF-8">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <title>{exhibit['title']}</title>
-    <link rel="Stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>{exhibit['title']}</h1>
-    {image_html}
-    <p>{exhibit['description']}</p>
-    
-    <a href="index.html">Back to First Page</a>
+    <class="exhibits">
+        <h1>{exhibit['title']}</h1>
+        {image_html}
+        <p>{exhibit['description']}</p>
+        <a href="index.html">Back to First Page</a>
+    </class>
 </body>
 </html>
 """
