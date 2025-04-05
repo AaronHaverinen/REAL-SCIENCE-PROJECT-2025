@@ -14,7 +14,8 @@ exhibits = [
         "description": "Our first animal phylum is called Porifera. Though it may not seem like it, sponges are actually animals and not plants. Porifera have neither organs nor true tissues but can produce both sexually and asexually through releasing sperm/eggs or budding, gemmules, and fragmentation. Additionally, Porifera are mostly assymetrical and sessile too. Here, I decided to showcase the Giant Barrel Sponge, also known as the <i>Xestospongia muta</i>. This animal lives mostly in the Gulf of America, near the Carribean Islands. Its diet consists of bacteria and plankton, as well as any other nutrition dissolved in the waters. The Giant Barrel Sponge, along with the whole phylum of Porifera, filter water through their pores and collect the food so that they can eat.",
         "image": [
             "Images of Animals/Giant_Barrel_Sponge.png" #Images of Porifera
-        ]
+        ],
+        "stylesheet" : "LIONS.css"
     },
     {
         "filename": "exhibit 2.html",
@@ -37,8 +38,9 @@ exhibits = [
         "title": "Exhibit 4: Annelida",
         "description": "The next phylum is Annelida. These animals have bilateral symmetry and you might also know these and worms. The most notable of these are actually earthwarms. Annelida reproduce sexually, though they are both genders at once. They have a closed circulatory system with no heart. Instead, they have bloods through capilaries in their body. Their digestive system is complete, running from mouth to anus. And even though they have no eyes, annelida can still sense the presence of light. Today, I am using the Red Tiger Worm, the <i>Eisenia Andrei</i>, as our example. This earthworm lives around 5 years in usually compost or dung heaps. The diet of this animal is reall yjust any type of decomposing matter, usually produce.",
         "image": [
-            "Images of Animals/Red_Tiger_Worm.png" #Images of Annelida
+            "Images of Animals/Red_Earthworm.png" #Images of Annelida
         ]
+        "name_of_animal": "The Red Tiger Worm"
     },
     {
         "filename": "exhibit 5.html",
@@ -157,7 +159,7 @@ def generate_exhibit_page(exhibit):
     <meta charset="UTF-8">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <title>{exhibit['title']}</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="exhibits">
