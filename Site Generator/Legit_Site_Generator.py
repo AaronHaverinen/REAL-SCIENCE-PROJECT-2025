@@ -160,12 +160,12 @@ def generate_exhibit_page(exhibit):
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <class="exhibits">
+    <div class="exhibits">
         <h1>{exhibit['title']}</h1>
         {image_html}
         <p>{exhibit['description']}</p>
         <a href="index.html">Back to First Page</a>
-    </class>
+    </div class>
 </body>
 </html>
 """
