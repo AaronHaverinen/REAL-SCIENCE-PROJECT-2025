@@ -15,7 +15,7 @@ exhibits = [
         "image": [
             "Images of Animals/Giant_Barrel_Sponge.png" #Images of Porifera
         ],
-        "stylesheet" : "LIONS.css"
+        "stylesheet": "Exhib1.css"
     },
     {
         "filename": "exhibit 2.html",
@@ -23,7 +23,8 @@ exhibits = [
         "description": "Our next phylum is named Cnidaria. Cnidaria can range from corals to jellyfish. This is the only phylum that has both medusa and polyp stages, meaning that it can start from looking like a plant into the ocean, and then grow into something that looks like a fish. Cnidaria are symmetrical, producing both sexually and asexually like Porifera. This is also the only phylum that uses tentacles to sting and catch prey. Here, I decided to display the Lion's Mane Jellyfish, also known as the <i>Cyanea capillata</i>. The Lions Mane Jellyfish lives in the Arctic, North Atlantic, and North Pacific Oceans, eating zooplankton, small fish, and even other jellyfish! The tentacles of this jellyfish can get as long as a hundred feet and its bell is around 8 feet in diameter. That's huge!",
         "image": [
             "Images of Animals/Lions_Mane_Jellyfish.png" #Images of Cnidaria
-        ]
+        ],
+        "stylesheet": "Exhib2.css"
     },
     {
         "filename": "exhibit 3.html",
@@ -36,10 +37,10 @@ exhibits = [
     {
         "filename": "exhibit 4.html",
         "title": "Exhibit 4: Annelida",
-        "description": "The next phylum is Annelida. These animals have bilateral symmetry and you might also know these and worms. The most notable of these are actually earthwarms. Annelida reproduce sexually, though they are both genders at once. They have a closed circulatory system with no heart. Instead, they have bloods through capilaries in their body. Their digestive system is complete, running from mouth to anus. And even though they have no eyes, annelida can still sense the presence of light. Today, I am using the Red Tiger Worm, the <i>Eisenia Andrei</i>, as our example. This earthworm lives around 5 years in usually compost or dung heaps. The diet of this animal is reall yjust any type of decomposing matter, usually produce.",
+        "description": "The next phylum is Annelida. These animals have bilateral symmetry and you might also know these as worms. The most notable of these are actually earthworms. Annelida reproduce sexually, though they are both genders at once. They have a closed circulatory system with no heart. Instead, they have bloods through capilaries in their body. Their digestive system is complete, running from mouth to anus. And even though they have no eyes, annelida can still sense the presence of light. Today, I am using the Red Tiger Worm, the <i>Eisenia Andrei</i>, as our example. This earthworm lives around 5 years in usually compost or dung heaps. The diet of this animal is really just any type of decomposing matter, usually produce.",
         "image": [
             "Images of Animals/Red_Earthworm.png" #Images of Annelida
-        ]
+        ],
         "name_of_animal": "The Red Tiger Worm"
     },
     {
@@ -133,7 +134,7 @@ def generate_index_page(exhibits):
                 <area shape="rect" coords="370, 140, 420, 220" href="exhibit 8.html">
                 <area shape="rect" coords="420, 140, 470, 220" href="exhibit 9.html">
                 <area shape="rect" coords="470, 10, 560, 80" href="exhibit 10.html">
-                <area shape="rect" coords="630, 80, 700, 130" href="exhibit 10.html">
+                <area shape="rect" coords="630, 80, 700, 130" href="exhibit 11.html">
             </map>
             <p>Here at the ACP, we hold animals in captive, 11 to be exact, and you can see them all here. Just follow the map and GO IN ORDER so that you do miss out on valuable information. Click on the correct places on the map above to direct you to different exhibits. Or, you can see the section below if you don't feel like, you know, going <i>treasure hunting</i>.</p>
             <section class="exhibits">
@@ -153,13 +154,17 @@ def generate_exhibit_page(exhibit):
     if "image" in exhibit and exhibit["image"]:
         for img_path in exhibit["image"]:
             image_html += f'<img src="{img_path}" alt="{exhibit["title"]} image">'
+    styleSheet = ""
+    if "stylesheet" in exhibit and exhibit["stylesheet"]:
+        for style_path in exhibit["stylesheet"]:
+            styleSheet += f'<link rel="stylesheet" href="{style_path}">'
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <title>{exhibit['title']}</title>
-    <link rel="stylesheet" href="styles.css">
+    {styleSheet}
 </head>
 <body>
     <div class="exhibits">
