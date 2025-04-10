@@ -16,7 +16,7 @@ exhibits = [
             "Images of Animals/Giant_Barrel_Sponge.png" #Images of Porifera
         ],
         "stylesheet": "Exhib1.css"
-    },
+    }, 
     {
         "filename": "exhibit 2.html",
         "title": "Exhibit 2: Cnidaria",
