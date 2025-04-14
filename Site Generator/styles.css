@@ -19,7 +19,8 @@ a {
 img {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 700px;
+  height: 450px; 
   align-self: center;
 }
 

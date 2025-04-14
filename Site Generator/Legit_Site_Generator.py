@@ -94,12 +94,14 @@ exhibits = [
     {
         "filename": "exhibit 11.html",
         "title": "Exhibit 11: Fish",
-        "description": "The last class is Fish or more specifically, Actinopterygii. Fish have an closed circulatory system (cold-blodded) with bilateral symmetry, producing sexually through external fertilizaiton. Fish breathe through countercurrent exchange where they use gills to exchange oxygen in the water for carbon dioxide. There are many types and classes of fish, for example jawless, (jawed) bony or cartilaginous. The Actinopterygii is a type of bony fish, which has ray fins, unlike Sarcopterygii who have lobe fins. The fish I am showcasing here is the European Perch, known as the <i>Perca fluviatilis</i>. Their habitat is really any freshwater source like lakes and they live primarily in Europe and parts of Siberia. A European Perch's lifespan is around 7-10 years, reaching a maximum of 22. Their diet consists of zooplankton for juveniles and invertibrates as well as other fish like minnows for the mature.",
+        "description": "The last class is Fish or more specifically, Actinopterygii. Jawed fish are categorized into two superclasses: Chondrichtyes and Osteichthyes, the first one being cartilaginous and the latter being bony. The Actinopterygii is a type of bony fish, which has ray fins, unlike Sarcopterygii who have lobe fins. Fish have an closed circulatory system (cold-blodded) with bilateral symmetry, producing sexually through external fertilizaiton. Fish breathe through countercurrent exchange where they use gills to exchange oxygen in the water for carbon dioxide. The fish I am showcasing here is the European Perch, known as the <i>Perca fluviatilis</i>. Their habitat is really any freshwater source like lakes and they live primarily in Europe and parts of Siberia. A European Perch's lifespan is around 7-10 years, reaching a maximum of 22. Their diet consists of zooplankton for juveniles and invertibrates as well as other fish like minnows for the mature.",
         "image": [
             "Images of Animals/European_perch.png" #Images of Fish
         ]
     }
 ] 
+
+
 
 
 
@@ -156,8 +158,7 @@ def generate_exhibit_page(exhibit):
             image_html += f'<img src="{img_path}" alt="{exhibit["title"]} image">'
     styleSheet = ""
     if "stylesheet" in exhibit and exhibit["stylesheet"]:
-        for style_path in exhibit["stylesheet"]:
-            styleSheet += f'<link rel="stylesheet" href="{style_path}">'
+        styleSheet += f'<link rel="stylesheet" href="{exhibit["stylesheet"]}">'
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,6 +173,7 @@ def generate_exhibit_page(exhibit):
         {image_html}
         <p>{exhibit['description']}</p>
         <a href="index.html">Back to First Page</a>
+        
     </div class>
 </body>
 </html>
