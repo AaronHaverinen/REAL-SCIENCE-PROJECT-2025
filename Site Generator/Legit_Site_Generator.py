@@ -42,7 +42,8 @@ exhibits = [
         "image": [
             "Images of Animals/Red_Earthworm.png" #Images of Annelida
         ],
-        "name_of_animal": "The Red Tiger Worm"
+        
+        "stylesheet": "Exhib4.css"
     },
     {
         "filename": "exhibit 5.html",
@@ -50,7 +51,8 @@ exhibits = [
         "description": "Arthropoda is one of the biggest phylum, including many animals like insects, crustaceans, etc. This phylum also has bilateral symmetry with an open circulatory system with hemolymph, a liquid similar to blood. Arthropoda reproduce sexually and have two different types of metamorphosis: complete and incomplete. The complete metamorphosis has four stages with a larva and pupa while incomplete has three with a nymph. The animal I am showcasing for this phylum is the American Lobster, known as the <i>Homarus americanus</i>. The American Lobster lives for around 100 years in the cold wwaters of the northwest pacific in the eastcoast of the United States. Its diet can range from mollusks to worms to urchins and more. Fun fact: when you cook lobsters, they become red!",
         "image": [
             "Images of Animals/American_Lobster.png" #Images of Arthropods
-        ]
+        ],
+        "stylesheet": "Exhib5.css"
     },
     {
         "filename": "exhibit 6.html",
@@ -58,7 +60,8 @@ exhibits = [
         "description": "This phylum is the last invertibrate one before we move onto vertebrates. You may have seen these wash up on the beach and think these are just cool rocks or dead plants, but these are actually animals. Echinodermata can include starfish, sand dollars, and even sea urchins. Echinodermata have bilateral symmetry when they are immature but grow into radial (or pentaradial) symmetry when fully grown. Echinodermata reproduce mainly via sexual reproduction but can also exhibit assexual reproduction through fragmentation. The echinodermatum that I have decided to show you all is the Common Starfish, or <i>Asterias rubens</i>. These Starfish live in the waters of the Atlantic Ocean for around 5 to 10 years. Their diet is carnivorous, hosting mollusks like clams, mussels, and barnacles.",
         "image": [
             "Images of Animals/Starfish.png" #Images of Echinodermata
-        ]
+        ],
+        "stylesheet": "Exhib6.css"
     },
     {
         "filename": "exhibit 7.html",
@@ -66,7 +69,8 @@ exhibits = [
         "description": "This next phylum will be chordata, with our last five animals being classes of that phylum. The first class is Aves. Aves are the first class that I will show you of vertebrates. Aves have an closed circulatory system with bilateral symmetry, producing sexually through internal fertilizaiton. Aves have wings and are really the only phylum that can fly. The bird I am showcasing here is the Blue Jay, known as the <i>Cyanocitta cristata</i>. Their habitat is usually mised woodlnads in Northeastern America and their lifespan is around 7 years. The blue jay's diet consists of seeds, nuts, and insects.",
         "image": [
             "Images of Animals/Blue_Jay.png" #Images of Aves
-        ]
+        ],
+        "stylesheet": "Exhib7.css"
     },
     {
         "filename": "exhibit 8.html",
@@ -74,7 +78,8 @@ exhibits = [
         "description": "Our next class of chordata will be Reptiles. This is a cold-blooded (meaning their blood temperature changes with the environment) type of vertebrate which usually has scaly skin. Reptiles have closed circulatory systems with one heart. Reptiles have bilateral symmetry, producing sexually through internal fertilization. The reptile here today is the Freshwater Crocodile, or <i>Crocodylus johnstoni</i>. This animal lives in freshwater lakes and wetlands usually located in Australia. Their lifespan is 30 to 40 years. The freshwater crocodile's diet can be amphibians, reptiles, small mammals, and even other reptiles.",
         "image": [
             "Images of Animals/Freshwater_crocodile.png" #Images of Reptiles
-        ]
+        ],
+        "stylesheet":"Exhib8.css"
     },
     {
         "filename": "exhibit 9.html",
@@ -82,7 +87,8 @@ exhibits = [
         "description": "The next class is Amphibian. Amphibians have an closed circulatory system with bilateral symmetry, producing sexually through external fertilizaiton. Amphibians usually start off in the water, but then gradually go to living on land. The amphibian I am showcasing here is the American Bullfrog, known as the <i>Lythobates catesbeianus</i>. Their habitat is usually lakes, ponds, or marshes and they live for around 7-10 years. The American Bullfrog's diet consists of insects, grasshoppers, beetles, spiders, etc.",
         "image": [
             "Images of Animals/American_Bullfrog.png" #Images of Amphibians
-        ]
+        ],
+        "stylesheet":"Exhib9.css"
     },
     {
         "filename": "exhibit 10.html",
@@ -90,7 +96,8 @@ exhibits = [
         "description": "The next class is Mammals. Mammals have an closed circulatory system with bilateral symmetry, producing sexually through internal fertilizaiton. Mammals have warm blood and they feed their young with milk from teh mammary gland, unique amongst the other classes. The mammals I am showcasing here is the Siberian Tiger, known as the <i>Panthera tigris altaica</i>. Their habitat is usually forests in eastern Russia, Northeastern China, and North Korea and they live on average for only 10-15 years. The Siberian Tiger's diet consists of elk, boar, deer, water buffalo, and other similar animals.",
         "image": [
             "Images of Animals/Siberian_Tiger.png" #Images of Mammals
-        ]
+        ],
+        "stylesheet":"Exhib10.css"
     },
     {
         "filename": "exhibit 11.html",
@@ -98,7 +105,8 @@ exhibits = [
         "description": "The last class is Fish or more specifically, Actinopterygii. Jawed fish are categorized into two superclasses: Chondrichtyes and Osteichthyes, the first one being cartilaginous and the latter being bony. The Actinopterygii is a type of bony fish, which has ray fins, unlike Sarcopterygii who have lobe fins. Fish have an closed circulatory system (cold-blodded) with bilateral symmetry, producing sexually through external fertilizaiton. Fish breathe through countercurrent exchange where they use gills to exchange oxygen in the water for carbon dioxide. The fish I am showcasing here is the European Perch, known as the <i>Perca fluviatilis</i>. Their habitat is really any freshwater source like lakes and they live primarily in Europe and parts of Siberia. A European Perch's lifespan is around 7-10 years, reaching a maximum of 22. Their diet consists of zooplankton for juveniles and invertibrates as well as other fish like minnows for the mature.",
         "image": [
             "Images of Animals/European_perch.png" #Images of Fish
-        ]
+        ],
+        "stylesheet":"Exhib11.css"
     }
 ] 
 
@@ -107,7 +115,7 @@ exhibits = [
 
 
 def generate_index_page(exhibits):
-    #Start Code
+    #Start Code for indexes
     exhibit_links = ""
     for exhibit in exhibits:
         exhibit_links += f'         <li><a href="{exhibit["filename"]}">{exhibit["title"]}</a></li>\n'
@@ -147,11 +155,12 @@ def generate_index_page(exhibits):
         <body>
         <html>
     """
-    #WE NEED TO DO MAP LINE 120
+    
     return html_content
 
 
 def generate_exhibit_page(exhibit, index, exhibits_count):
+    #Write Code for Generating Exhibit Pages
     print("Entering Exhibit Page Creation")
     image_html = ""
     if "image" in exhibit and exhibit["image"]:
@@ -173,7 +182,9 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
     #Veci Varse
     if index < exhibits_count - 1:
         next_filename = exhibits[index + 1]["filename"]
-        nav_html += f'    <a href="{next_filename}">Next Exhibit</a>\n'
+        nav_html += f"""    <button class="btn-1" href="{next_filename}"><span>Next Exhibit</span></button>
+        <link rel="stylesheet" href="Nxt_Exhib_Btn.css">
+        """
 
    
     nav_html += '</div>'

@@ -21,12 +21,11 @@ a {
 }
 
 img {
-
-
+    display: block;
+    margin: auto;
     height: auto;
     width: auto;
-    max-height: 30px;
-    max-width: 30px;
+    max-height: 300px;
     align-self: center;
 }
 

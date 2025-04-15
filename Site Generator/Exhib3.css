@@ -18,11 +18,12 @@ a {
 
 
 img {
-        display: block;
-        margin: auto;
-        height: 300px;
-        
-        align-self: center;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    align-self: center;
 }
     
     
