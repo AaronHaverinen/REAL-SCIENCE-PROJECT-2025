@@ -4,11 +4,11 @@ h1 {
     font-size: 50px;
 }
 body{
-    background-color: #9df5ff;
+    background-color: #76ffa6;
 }
 p {
     margin-left: 80px;
-    margin-right: 80px;
+    margin-right: 80px; 
     font-size: 18px;
     text-align: center;
 }
@@ -16,10 +16,15 @@ a {
   text-align: center;
 }
 
+
 img {
-  display: block;
-  margin: auto;
-  width: 50%;
-  align-self: center;
+        display: block;
+        margin: auto;
+        height: 300px;
+        
+        align-self: center;
 }
+    
+    
+
 

@@ -17,9 +17,10 @@ a {
 }
 
 img {
-  display: block;
-  margin: auto;
-  width: 50%;
-  align-self: center;
+    display: block;
+    margin: auto;
+    height: 300px;
+    
+    align-self: center;
 }
 

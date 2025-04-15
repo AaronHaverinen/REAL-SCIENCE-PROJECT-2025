@@ -32,7 +32,8 @@ exhibits = [
         "description": "These are Mollusca, also known as Mollusks. Mollusca can have multiple hearts in their open circulatory system. This phylum differs from Porifera and Cnidaria because it actually has blood to circulate. Mollusca have bilateral symmetry, producing sexually through external fertilization. Some Mollusca have shells while others do not. Here I am showcasing the Giant Pacific Octopus, known taxonomically as the <i>Enteroctopus dofleini</i>. This is a type of Mollusca that does not have a shell, like squids. However, all mollusca do have a mantel for protection. The Giant Pacific Octopus lives only about 3-5 years in the Pacific Ocean (as described in the name). Its diet can include shrimp, crab, scallops, lobster, and other seafood of that type. As a fun fact, this octopus has nine brains! It has one central one and one for each arm. How lucky.",
         "image": [
             "Images of Animals/Giant_Pacific_Octopus.png" #Images of Mollusca
-        ]
+        ],
+        "stylesheet": "Exhib3.css"
     },
     {
         "filename": "exhibit 4.html",
@@ -150,7 +151,7 @@ def generate_index_page(exhibits):
     return html_content
 
 
-def generate_exhibit_page(exhibit):
+def generate_exhibit_page(exhibit, index, exhibits_count):
     print("Entering Exhibit Page Creation")
     image_html = ""
     if "image" in exhibit and exhibit["image"]:
@@ -159,6 +160,25 @@ def generate_exhibit_page(exhibit):
     styleSheet = ""
     if "stylesheet" in exhibit and exhibit["stylesheet"]:
         styleSheet += f'<link rel="stylesheet" href="{exhibit["stylesheet"]}">'
+
+    #build previous/next navi
+    nav_html = '<div style="margin-top: 20px;">\n'
+
+    
+    # If not the first exhibit, show previous link
+    if index > 0:
+        prev_filename = exhibits[index - 1]["filename"]
+        nav_html += f'      <a href="{prev_filename}" style="Margin-right: 20 px;<">Previous Exhibit'
+        
+    #Veci Varse
+    if index < exhibits_count - 1:
+        next_filename = exhibits[index + 1]["filename"]
+        nav_html += f'    <a href="{next_filename}">Next Exhibit</a>\n'
+
+   
+    nav_html += '</div>'
+
+    
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,6 +192,8 @@ def generate_exhibit_page(exhibit):
         <h1>{exhibit['title']}</h1>
         {image_html}
         <p>{exhibit['description']}</p>
+        {nav_html}
+       
         <a href="index.html">Back to First Page</a>
         
     </div class>
@@ -183,11 +205,14 @@ def generate_exhibit_page(exhibit):
 def main():
     
     print("Site Generator Process: Webstite srating")
+    i = 0
+    exhibits_count = len(exhibits)
     for exhibit in exhibits:
-        content = generate_exhibit_page(exhibit)
+        content = generate_exhibit_page(exhibit, i, exhibits_count)
         file_path = os.path.join(output_dir, exhibit["filename"])
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(content)
+        i+=1
     generate_index_page(exhibits)
     index_content = generate_index_page(exhibits)
     print (index_content)

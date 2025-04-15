@@ -21,10 +21,13 @@ a {
 }
 
 img {
-  display: block;
-  margin: auto;
-  width: 50%;
-  align-self: center;
+
+
+    height: auto;
+    width: auto;
+    max-height: 30px;
+    max-width: 30px;
+    align-self: center;
 }
 
 
