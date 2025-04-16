@@ -11,37 +11,43 @@ exhibits = [
     {
         "filename": "exhibit 1.html",
         "title": "Exhibit 1: Porifera",
-        "description": "Our first animal phylum is called Porifera. Though it may not seem like it, sponges are actually animals and not plants. Porifera have neither organs nor true tissues but can produce both sexually and asexually through releasing sperm/eggs or budding, gemmules, and fragmentation. Additionally, Porifera are mostly assymetrical and sessile too. Here, I decided to showcase the Giant Barrel Sponge, also known as the <i>Xestospongia muta</i>. This animal lives mostly in the Gulf of America, near the Carribean Islands. Its diet consists of bacteria and plankton, as well as any other nutrition dissolved in the waters. The Giant Barrel Sponge, along with the whole phylum of Porifera, filter water through their pores and collect the food so that they can eat.",
+        "description": "Though it may not seem as such, sea sponges are actually animals, and not plants. Sailors used to collect them to make dishwashing equipment (what now is synthetic). Now, porifera are mostly asymmetrical, reproducing both sexually and asexually. But this seems a bit strange. How can an animal reproduce both sexually and asexually? Well actually, asexual reproduction with porifera (or sponges) works via fragmentation, budding, or gemmules. Sexual reproduction occurs through releasing sperm or egg cells, where they float through the water to find another sponge, fertilizing it. However, sponges don't have true tissues or organs and are sessile, meaning not moving. Some fun facts about porifera are that they are filter-feeders, meaning that they filter water through themselves to extract the solids dissolved (i.e. plankton). This beauty above is the Giant Barrel Sponge, also known scientifically (or by its fancy name), <i>Xestospongia muta</i>. Their habitat is along the Caribbean and Gulf of America, most commonly on coral reefs. The Giant Barrel Sponge has a really long life span of around 2000 years! That means some sponges that are still living in our ocean today may have been alive when Jesus was doing his ministry! The Giant Barrel Sponge feeds on bacteria, plankton, prochlorophytes, and really any other nutrition dissolved in the water. It is not that picky. Another fun fact about sponges is that they are called porifera because of their many pores. Below is the taxonomy.",
         "image": [
-            "Images of Animals/Giant_Barrel_Sponge.png" #Images of Porifera
+            "Images of Animals/Giant_Barrel_Sponge.png", #Images of Porifera
         ],
+        "taxonomy": ["Images of Animals/Poriferatax.png"],
         "stylesheet": "Exhib1.css"
     }, 
     {
         "filename": "exhibit 2.html",
         "title": "Exhibit 2: Cnidaria",
-        "description": "Our next phylum is named Cnidaria. Cnidaria can range from corals to jellyfish. This is the only phylum that has both medusa and polyp stages, meaning that it can start from looking like a plant into the ocean, and then grow into something that looks like a fish. Cnidaria are symmetrical, producing both sexually and asexually like Porifera. This is also the only phylum that uses tentacles to sting and catch prey. Here, I decided to display the Lion's Mane Jellyfish, also known as the <i>Cyanea capillata</i>. The Lions Mane Jellyfish lives in the Arctic, North Atlantic, and North Pacific Oceans, eating zooplankton, small fish, and even other jellyfish! The tentacles of this jellyfish can get as long as a hundred feet and its bell is around 8 feet in diameter. That's huge!",
+        "description": "Cnidaria is just a fancy Latin word for this phylum, which includes jellyfish, corals, and many others. Cnidaria are unique because they are the only phylum that has both the medusa and polyp stages. If you do not know what this means, it is completely OK. A jellyfish will start from an egg, then grow into a polyp, attached to the ground and commonly mistaken as a plant or even sponge, and then finally grow into a medusa with its large bell and tentacles. Cnidaria, like sponges, produce both sexually and asexually too. The asexual way works with budding, where the cnidarian can break off a bit of its body and then grow a new cnidarian out of it. Sexual reproduction works similarly to other animals by releasing sperm to fertilize females. Cnidaria also have tentacles, whose purpose is to sting and catch prey. This serves as an advantage to being a predator in the ocean. A funny fact about cnidaria is that they look like mushrooms. The cnidarian I've decided to showcase today is the Lion's Mane Jellyfish, also known by its boring name, the <i>Cyanea capillata</i>. This humongous jellyfish can grow tentacles as long as a hundred feet and its bell's circumference up to thirty feet! It lives in the cold waters of the Arctic, North Atlantic, and North Pacific Oceans. However, this glorious jellyfish only lives about twelve months, which is nothing compared to some other sea creatures. Its diet consists of zooplankton, small fish, and maybe even some other jellyfish occasionally. Below is the taxonomy.",
         "image": [
-            "Images of Animals/Lions_Mane_Jellyfish.png" #Images of Cnidaria
+            "Images of Animals/Lions_Mane_Jellyfish.png"
         ],
+        "taxonomy":["Images of Animals/Cnidariatax.png"], #Images of Cnidaria
+    
         "stylesheet": "Exhib2.css"
     },
     {
         "filename": "exhibit 3.html",
         "title": "Exhibit 3: Mollusca",
-        "description": "These are Mollusca, also known as Mollusks. Mollusca can have multiple hearts in their open circulatory system. This phylum differs from Porifera and Cnidaria because it actually has blood to circulate. Mollusca have bilateral symmetry, producing sexually through external fertilization. Some Mollusca have shells while others do not. Here I am showcasing the Giant Pacific Octopus, known taxonomically as the <i>Enteroctopus dofleini</i>. This is a type of Mollusca that does not have a shell, like squids. However, all mollusca do have a mantel for protection. The Giant Pacific Octopus lives only about 3-5 years in the Pacific Ocean (as described in the name). Its diet can include shrimp, crab, scallops, lobster, and other seafood of that type. As a fun fact, this octopus has nine brains! It has one central one and one for each arm. How lucky.",
+        "description": "These are mollusca, a phylum that you're probably a bit familiar with. Their symmetry pattern is bilateral. Mollusca differ from other phyla because they actually have multiple hearts in their open circulatory system. Mollusca reproduce sexually through external fertilization, unlike most animals who reproduce internally. Some mollusks have shells and some do not, but all of them do have a mantle for protection. Above, I am showcasing the Giant Pacific Octopus, also known scientifically as the <i>Enteroctopus dofleini</i>. Their lifespan is around 3–5 years in the Pacific Ocean. Also, the Giant Pacific Octopus' diet can range from shrimp and crab to lobster and even more. As some fun facts, octopuses in general can change their color to camouflage with surroundings and can squirt ink to get away from enemies. And also, this specific octopus has nine brains! It has one central one for control and dominion over the other eight, which control each arm. How lucky. Imagine how much more innovation there would be if we each had nine brains! I'm just joking. Below is the taxonomy.",
         "image": [
-            "Images of Animals/Giant_Pacific_Octopus.png" #Images of Mollusca
+            "Images of Animals/Giant_Pacific_Octopus.png"
         ],
+        "taxonomy": ["Images of Animals/Molluscatax.png"], #Images of Mollusca
+        
         "stylesheet": "Exhib3.css"
     },
     {
         "filename": "exhibit 4.html",
         "title": "Exhibit 4: Annelida",
-        "description": "The next phylum is Annelida. These animals have bilateral symmetry and you might also know these as worms. The most notable of these are actually earthworms. Annelida reproduce sexually, though they are both genders at once. They have a closed circulatory system with no heart. Instead, they have bloods through capilaries in their body. Their digestive system is complete, running from mouth to anus. And even though they have no eyes, annelida can still sense the presence of light. Today, I am using the Red Tiger Worm, the <i>Eisenia Andrei</i>, as our example. This earthworm lives around 5 years in usually compost or dung heaps. The diet of this animal is really just any type of decomposing matter, usually produce.",
+        "description": "Now this phylum has a weird name (not saying that the others don't but yeah), annelida. There's nothing really too <i>special</i> about them, though they can see light without even any eyes and they breathe through a moist layer of water on their skin. That's why you can see that earthworms die when dried in the sun for a while. Annelids have bilateral symmetry and reproduce sexually, even though they are both genders at once! They rub against each other and exchange DNA to keep the line going. Their circulatory system is closed with some sort of heart-like structure. Their digestive system is complete, running all the way from their mouth to anus. Now this annelid that I have decided to show all of you today is the Red Tiger Worm, the <i>Eisenia andrei</i> (named by some scientists). This worm lives for around 5 years, usually residing in composts or dung heaps, or sometimes underground. It eats basically any decomposing matter it can find, usually some sort of produce. There really isn't much else to say. Below is the taxonomy.",
         "image": [
-            "Images of Animals/Red_Earthworm.png" #Images of Annelida
-        ],
+            "Images of Animals/Red_Earthworm.png"],
+        "taxonomy": ["Images of Animals/Annelidatax.png"], #Images of Annelida
+        
         
         "stylesheet": "Exhib4.css"
     },
@@ -50,8 +56,9 @@ exhibits = [
         "title": "Exhibit 5: Arthropoda",
         "description": "Arthropoda is one of the biggest phylum, including many animals like insects, crustaceans, etc. This phylum also has bilateral symmetry with an open circulatory system with hemolymph, a liquid similar to blood. Arthropoda reproduce sexually and have two different types of metamorphosis: complete and incomplete. The complete metamorphosis has four stages with a larva and pupa while incomplete has three with a nymph. The animal I am showcasing for this phylum is the American Lobster, known as the <i>Homarus americanus</i>. The American Lobster lives for around 100 years in the cold wwaters of the northwest pacific in the eastcoast of the United States. Its diet can range from mollusks to worms to urchins and more. Fun fact: when you cook lobsters, they become red!",
         "image": [
-            "Images of Animals/American_Lobster.png" #Images of Arthropods
-        ],
+            "Images of Animals/American_Lobster.png"],
+        "taxonomy": ["Images of Animals/Arthropodatax.png"] #Images of Arthropods
+        ,
         "stylesheet": "Exhib5.css"
     },
     {
@@ -59,17 +66,19 @@ exhibits = [
         "title": "Exhibit 6: Echinodermata",
         "description": "This phylum is the last invertibrate one before we move onto vertebrates. You may have seen these wash up on the beach and think these are just cool rocks or dead plants, but these are actually animals. Echinodermata can include starfish, sand dollars, and even sea urchins. Echinodermata have bilateral symmetry when they are immature but grow into radial (or pentaradial) symmetry when fully grown. Echinodermata reproduce mainly via sexual reproduction but can also exhibit assexual reproduction through fragmentation. The echinodermatum that I have decided to show you all is the Common Starfish, or <i>Asterias rubens</i>. These Starfish live in the waters of the Atlantic Ocean for around 5 to 10 years. Their diet is carnivorous, hosting mollusks like clams, mussels, and barnacles.",
         "image": [
-            "Images of Animals/Starfish.png" #Images of Echinodermata
-        ],
+            "Images of Animals/Starfish.png"],
+        "taxonomy":["Images of Animals/Echinotax.png"] #Images of Echinodermata
+        ,
         "stylesheet": "Exhib6.css"
     },
     {
         "filename": "exhibit 7.html",
         "title": "Exhibit 7: Aves",
-        "description": "This next phylum will be chordata, with our last five animals being classes of that phylum. The first class is Aves. Aves are the first class that I will show you of vertebrates. Aves have an closed circulatory system with bilateral symmetry, producing sexually through internal fertilizaiton. Aves have wings and are really the only phylum that can fly. The bird I am showcasing here is the Blue Jay, known as the <i>Cyanocitta cristata</i>. Their habitat is usually mised woodlnads in Northeastern America and their lifespan is around 7 years. The blue jay's diet consists of seeds, nuts, and insects.",
+        "description": "This next phylum will be chordata, with our last five animals being classes of that phylum. The first class is Aves. Aves are the first class that I will show you of vertebrates. Aves have an closed circulatory system with bilateral symmetry, producing sexually through internal fertilizaiton. Aves have wings and are really the only phylum that can fly. The bird I am showcasing here is the Blue Jay, known as the <i>Cyanocitta cristata</i>. Their habitat is usually mixed woodlands in Northeastern America and their lifespan is around 7 years. The blue jay's diet consists of seeds, nuts, and insects.",
         "image": [
-            "Images of Animals/Blue_Jay.png" #Images of Aves
-        ],
+            "Images of Animals/Blue_Jay.png"],
+        "taxonomy":["Images of Animals/Avestax.png"] #Images of Aves
+        ,
         "stylesheet": "Exhib7.css"
     },
     {
@@ -77,8 +86,9 @@ exhibits = [
         "title": "Exhibit 8: Reptiles",
         "description": "Our next class of chordata will be Reptiles. This is a cold-blooded (meaning their blood temperature changes with the environment) type of vertebrate which usually has scaly skin. Reptiles have closed circulatory systems with one heart. Reptiles have bilateral symmetry, producing sexually through internal fertilization. The reptile here today is the Freshwater Crocodile, or <i>Crocodylus johnstoni</i>. This animal lives in freshwater lakes and wetlands usually located in Australia. Their lifespan is 30 to 40 years. The freshwater crocodile's diet can be amphibians, reptiles, small mammals, and even other reptiles.",
         "image": [
-            "Images of Animals/Freshwater_crocodile.png" #Images of Reptiles
-        ],
+            "Images of Animals/Freshwater_crocodile.png"],
+        "taxonomy":["Images of Animals/Reptiletax.png"] #Images of Reptiles
+        ,
         "stylesheet":"Exhib8.css"
     },
     {
@@ -86,8 +96,9 @@ exhibits = [
         "title": "Exhibit 9: Amphibians",
         "description": "The next class is Amphibian. Amphibians have an closed circulatory system with bilateral symmetry, producing sexually through external fertilizaiton. Amphibians usually start off in the water, but then gradually go to living on land. The amphibian I am showcasing here is the American Bullfrog, known as the <i>Lythobates catesbeianus</i>. Their habitat is usually lakes, ponds, or marshes and they live for around 7-10 years. The American Bullfrog's diet consists of insects, grasshoppers, beetles, spiders, etc.",
         "image": [
-            "Images of Animals/American_Bullfrog.png" #Images of Amphibians
-        ],
+            "Images of Animals/American_Bullfrog.png"],
+        "taxonomy":["Images of Animals/Amphibiantax.png"] #Images of Amphibians
+        ,
         "stylesheet":"Exhib9.css"
     },
     {
@@ -95,8 +106,9 @@ exhibits = [
         "title": "Exhibit 10: Mammals",
         "description": "The next class is Mammals. Mammals have an closed circulatory system with bilateral symmetry, producing sexually through internal fertilizaiton. Mammals have warm blood and they feed their young with milk from teh mammary gland, unique amongst the other classes. The mammals I am showcasing here is the Siberian Tiger, known as the <i>Panthera tigris altaica</i>. Their habitat is usually forests in eastern Russia, Northeastern China, and North Korea and they live on average for only 10-15 years. The Siberian Tiger's diet consists of elk, boar, deer, water buffalo, and other similar animals.",
         "image": [
-            "Images of Animals/Siberian_Tiger.png" #Images of Mammals
-        ],
+            "Images of Animals/Siberian_Tiger.png"],
+        "taxonomy":["Images of Animals/Mammaltax.png"] #Images of Mammals
+        ,
         "stylesheet":"Exhib10.css"
     },
     {
@@ -104,8 +116,9 @@ exhibits = [
         "title": "Exhibit 11: Fish",
         "description": "The last class is Fish or more specifically, Actinopterygii. Jawed fish are categorized into two superclasses: Chondrichtyes and Osteichthyes, the first one being cartilaginous and the latter being bony. The Actinopterygii is a type of bony fish, which has ray fins, unlike Sarcopterygii who have lobe fins. Fish have an closed circulatory system (cold-blodded) with bilateral symmetry, producing sexually through external fertilizaiton. Fish breathe through countercurrent exchange where they use gills to exchange oxygen in the water for carbon dioxide. The fish I am showcasing here is the European Perch, known as the <i>Perca fluviatilis</i>. Their habitat is really any freshwater source like lakes and they live primarily in Europe and parts of Siberia. A European Perch's lifespan is around 7-10 years, reaching a maximum of 22. Their diet consists of zooplankton for juveniles and invertibrates as well as other fish like minnows for the mature.",
         "image": [
-            "Images of Animals/European_perch.png" #Images of Fish
-        ],
+            "Images of Animals/European_perch.png"],
+        "taxonomy":["Images of Animals/Fishtax.png"] #Images of Fish
+        ,
         "stylesheet":"Exhib11.css"
     }
 ] 
@@ -169,6 +182,10 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
     styleSheet = ""
     if "stylesheet" in exhibit and exhibit["stylesheet"]:
         styleSheet += f'<link rel="stylesheet" href="{exhibit["stylesheet"]}">'
+    tax_html = ""
+    if "taxonomy" in exhibit and exhibit["taxonomy"]:
+        for tax_path in exhibit["taxonomy"]:
+            tax_html += f'<img src="{tax_path}" alt="{exhibit["title"]} taxonomy">'
 
     #build previous/next navi
     nav_html = '<div style="margin-top: 20px;">\n'
@@ -203,6 +220,8 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
         <h1>{exhibit['title']}</h1>
         {image_html}
         <p>{exhibit['description']}</p>
+        <br>
+        {tax_html}
         {nav_html}
        
         <a href="index.html">Back to First Page</a>
