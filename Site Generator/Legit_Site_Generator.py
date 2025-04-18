@@ -54,7 +54,7 @@ exhibits = [
     {
         "filename": "exhibit 5.html",
         "title": "Exhibit 5: Arthropoda",
-        "description": "Arthropoda is one of the biggest phylum, including many animals like insects, crustaceans, etc. This phylum also has bilateral symmetry with an open circulatory system with hemolymph, a liquid similar to blood. Arthropoda reproduce sexually and have two different types of metamorphosis: complete and incomplete. The complete metamorphosis has four stages with a larva and pupa while incomplete has three with a nymph. The animal I am showcasing for this phylum is the American Lobster, known as the <i>Homarus americanus</i>. The American Lobster lives for around 100 years in the cold wwaters of the northwest pacific in the eastcoast of the United States. Its diet can range from mollusks to worms to urchins and more. Fun fact: when you cook lobsters, they become red!",
+        "description": "",
         "image": [
             "Images of Animals/American_Lobster.png"],
         "taxonomy": ["Images of Animals/Arthropodatax.png"] #Images of Arthropods
@@ -125,6 +125,7 @@ exhibits = [
 
 
 
+#def generate_home_page():
 
 
 def generate_index_page(exhibits):
@@ -136,7 +137,7 @@ def generate_index_page(exhibits):
         <!DOCTYPE html>
         <html lang="en">
         <head>
-            <title>Exhibit Page</title>
+            <title>Start Exploring</title>
             <!-- Link to external CSS file-->
             <link rel="stylesheet" href="styles.css">
         </head>
