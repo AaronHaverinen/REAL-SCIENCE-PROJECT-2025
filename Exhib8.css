@@ -1,0 +1,48 @@
+h1 {
+    color: #252525;
+    text-align: center;
+    font-size: 50px;
+}
+body{
+    background-color: #ff3d3d;
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+}
+p {
+    margin-left: 80px;
+    margin-right: 80px; 
+    font-size: 18px;
+    text-align: center;
+}
+a {
+  text-align: center;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 800px;
+    align-self: center;
+}
+    
+    
+
+
+.exhibits {
+    text-align: center;
+}
+.exhib-btn {
+    background-color: #3d2d3d;
+    color: #ff3d3d;
+    font-family: "Gill Sans", sans-serif;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  .exhib-btn:hover {
+    background-color: #9e1515;
+    color: #3d2d3d;
+  }
