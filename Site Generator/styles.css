@@ -5,6 +5,7 @@ h1 {
 }
 body{
     background-color: #9dd5ff;
+    font-family: "Gill Sans", sans-serif;
 }
 p {
     margin-left: 80px;
@@ -25,8 +26,8 @@ img {
 }
 
 .exhibits {
-    background-color: #ffd9e1;
-    padding: 42px;
+    background-color: #7babff;
+    padding: 20px;
     border: 8px soldug #00446f;
     text-align: center;
   }
@@ -49,60 +50,15 @@ img {
     text-align: center;
   }
 
-.Exhibit_1 {
+
+.index-btn {
   background-color: #9dd5ff;
-  }
-  .Exhibit_1 h1 {
-    color: #454545;
-    text-align: center;
-    font-size: 50px;
-  }
-  .Exhibit_1 h2 {
-    color: #484848;
-    text-align: center;
-  }
-  .Exhibit_1 p {
-    color: #757575;
-    font-size: 15px;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-.Exhibit_2 {
-  background-color: #99fad2;
-  }
-  .Exhibit_2 h1 {
-    color: #454545;
-    text-align: center;
-    font-size: 50px;
-  }
-  .Exhibit_2 h2 {
-    color: #484848;
-    text-align: center;
-  }
-  .Exhibit_2 p {
-    color: #757575;
-    font-size: 15px;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-.Exhibit_3 {
-background-color: #9daaff;
+  color: #3d3d3d;
+  font-family: "Gill Sans", sans-serif;
+  padding: 5px 10px;
+  text-decoration: none;
 }
-.Exhibit_3 h1 {
-  color: #454545;
-  text-align: center;
-  font-size: 50px;
-}
-.Exhibit_3 h2 {
-  color: #484848;
-  text-align: center;
-}
-.Exhibit_3 p {
-  color: #757575;
-  font-size: 15px;
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+.index-btn:hover {
+  background-color: #7babff;
+  color: #007bd8;
 }

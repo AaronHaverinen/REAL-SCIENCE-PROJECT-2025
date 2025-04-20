@@ -5,6 +5,8 @@ h1 {
 }
 body{
     background-color: #ffb876;
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
 }
 p {
     margin-left: 80px;
@@ -27,6 +29,19 @@ img {
     align-self: center;
 }
     
+.exhibits {
+    text-align: center;
+}
     
-
+.exhib-btn {
+    background-color: #3d3d3d;
+    color: #ffb876;
+    font-family: "Gill Sans", sans-serif;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  .exhib-btn:hover {
+    background-color: #cd7e3d;
+    color: #3d3d3d;
+  }
 

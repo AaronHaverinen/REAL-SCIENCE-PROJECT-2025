@@ -204,7 +204,7 @@ def generate_index_page(exhibits: list[dict]) -> str:
         </html>
 
         <body>
-            <h1>Welcome To The Animal Captivity Place </h1>
+            <h1>Welcome To The Haverinen Animal Education Website</h1>
             
             
             <img src="{image_root}MAYBEZOOMAP.png" usemap="#zoomap">
@@ -221,11 +221,17 @@ def generate_index_page(exhibits: list[dict]) -> str:
                 <area shape="rect" coords="470, 10, 560, 80" href="exhibit 10.html">
                 <area shape="rect" coords="630, 80, 700, 130" href="exhibit 11.html">
             </map>
-            <p>Here at the ACP, we hold animals in captive, 11 to be exact, and you can see them all here. Just follow the map and GO IN ORDER so that you do miss out on valuable information. Click on the correct places on the map above to direct you to different exhibits. Or, you can see the section below if you don't feel like, you know, going <i>treasure hunting</i>.</p>
+            <p>Welcome to our interactive zoo interface of the HAEW. You can click anywhere on the map above to learn about animals. Or, you can go to the section below to see the exhibits if you don't feel like trying to find the correct place on the map. Once you think that you've learned enough, you can check your knowledge with a little quiz at the bottom of the page. You will thoroughly enjoy gazing at and learning about these eleven unique animals.</p>
             <section class="exhibits">
                 <h2>Here is a list of exhibits</h2>
                 
                 {links}
+                <br>
+                <br>
+                <br>
+                <br>
+                <a class="index-btn" href="Homepage.html">Back to Homepage</a>
+                <a class="index-btn" href="Quiz_for_website.html">Check my knowledge</a>
         <body>
         <html>
     """
@@ -254,15 +260,13 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
     # If not the first exhibit, show previous link
     if index > 0:
         prev_filename = exhibits[index - 1]["filename"]
-        nav_html += f'      <a href="{prev_filename}" style="Margin-right: 20 px;<">Previous Exhibit'
+        nav_html += f"""      <a class="exhib-btn" href="{prev_filename}">Previous Exhibit</a>
+        """
         
     #Veci Varse
     if index < exhibits_count - 1:
         next_filename = exhibits[index + 1]["filename"]
-        nav_html += f"""    <a class="btn-1" href="{next_filename}">
-            <span>Next Exhibit</span>
-            
-        </a>
+        nav_html += f"""      <a class="exhib-btn" href="{next_filename}">Next Exhibit</a>
         """
 
    
@@ -285,10 +289,12 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
         <br>
         {tax_html}
         {nav_html}
-       
-        <a href="index.html">Back to First Page</a>
         
     </div class>
+    <p></p>
+
+    <a class="exhib-btn" href="index.html">Back to Main Page</a>
+
 </body>
 </html>
 """
