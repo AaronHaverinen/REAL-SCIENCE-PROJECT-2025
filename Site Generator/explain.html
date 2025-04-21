@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <title>How I Did It</title>
+      <!-- Link to external CSS file-->
+      
+  <style>
+      h1 {
+        text-align: center;
+        font-size: 70px;
+      } 
+      h2 {
+        font-size: 40px;
+        font-weight: 500;
+      }
+      p {
+        text-align: center;
+      } 
+      
+      body{
+        background-color: #baff8f;
+        align-items: center;
+        text-align: center;
+        font-family:'Gill Sans', sans-serif;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .ex-btn {
+        background-color: #3d3d3d;
+        color: #baff8f;
+        font-family: "Gill Sans", sans-serif;
+        padding: 5px 10px;
+        text-decoration: none;
+      }
+      .ex-btn:hover {
+        background-color: #6bf66e;
+        color: #3d3d3d;
+      }
+      img {
+        max-height: 250px;
+        max-width: 1000px;
+      }
+      * {
+        box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+  </style>
+  </head>
+  
+
+    <body>
+        <h1>How I Made This Website</h1>
+        <br>
+        <p>After more than thirty hours of straight coding, testing, and debugging, the website was finally ready to be my completed science project. But everything you're seeing is just the front end and ultimately, just the result of all the work that was put in. On this page, I strive to teach you, or at least give you an overview of how I did it and what went into it.</p>
+        <br>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <section class="Project Management">
+            <h2>Project Management</h2>
+            <h4>Importance of Project Management</h4>
+            <p>At the beginning of a project, it might not seem necessary as only a few files are used a code is simple. However, as you get deeper into a project, there are so much more files (I have at least 30) and 100x more code. This makes debugging a pain if you don't manage your project well.</p>
+            <h4>What is Git?</h4>
+            <p>Git is a version control system that tracks changes in computer files, making it easy to manage and collaborate on projects.</p>
+            <h4>How did I use Git to manage our code?</h4>
+            <p>After saving a file, I would be able to commit the file in Sourcetree, then push it to my GitHub page. The allowed for me to be able to easily see old versions of my code and debug it quickly.</p>
+            <img src="Images of Animals/Git_ex.png">
+        </section>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <section class="Trials and Tribulations">
+            <h2>Trials and Tribulations</h2>
+            <h4>The Battle of ZOOMAP.png</h4>
+            <p>I uploaded my entire website to GitHub to test out my website two days before it was due. But something was off: once I clicked the main index page, the zoo map was not loading. Ten minutes went by, then another. I was tirelessly trying to figure out what was wrong with the directory path. It seemed as if everything was fine, but it wasn't. Then, after an hour of tinkering, it finally struck me. I had to use my Git repositories and commits to look into older versions that worked. That's exactly what I did; I changed up my code so that it would not search through anything but the correct folders. But still, it didn't work.</p>
+            <p>I inspected the page and then saw that a ghost command happened? I was utterly confused. How could GitHub just write out lines of code when it did not have access to my computer? This was strange. I tried one last trick I had hidden all the way at the top of my sleeve: saving the project into a different folder. And as I pushed the code to GitHub, it finally work. Phew.</p>
+            <img src="Images of Animals/Trial1.png">
+            <h4>The Unresting Button Case</h4>
+            <p>So it was around a week before my project was due and I was thinking of making it more extravagant. Now, little did I know how much work it would be. If you've seen other parts of this website, there are buttons everywhere. At this point on which I am narrating, they didn't exist. All there was were just links. I went online and looked up button designed, learned the css and html code, and then coded it with an href that took the user to a new page. However, this did not work. I didn't know why. When I tried to go to the <u>next exhibit</u>, it went backward. I was quite frustrated, but let it be for the time being.</p>
+            <p>The next day, I tried again, this time trying to debug my error. Apparently buttons could not link to different pages. But if this was the case, then why could I use buttons on other websites? Something didn't add up. After another day of researching, I was finally able to detect the error. I needed to stylize an anchor link with an href as a button in css. It was all fake this entire time? Anyway, I did what my research told me to do, but it still didn't work. I went through countless websites, trying to find some css code that would at least point me in the right direction. And finally, I found it. I was able to use a small part of an article to meticulously gather the needed information so that I could write the code. And what can I say? There are buttons all over this website now!</p>
+            <img src="Images of Animals/Trial2.png">
+            <br>
+            <h4>The Dread of the Quiz Button</h4>
+            <p>I don't know if it's just me, or does everyone have trouble with buttons. Well, JavaScript was never my <i>strongest</i> suit, probably because I'd only used it once before this project. Let's get into the story. So I was coding the quiz portion of my website and everything was working perfectly: the questions were showing up, you could select an answer, etc. But there was one thing that stole another hour of my away: the submit button. To this day, I still hate that thing. In my code, I called a variable idx and used it so see if answers were submitted. Then, the submit button code should have looped through it to see how many answers were correct. But it didn't, for some reason. I kept working and working and working, yet nothing seemed to work. I even tried looking at other people's websites to try and see the difference, but there was none.</p>
+            <p>I sat in that chair, almost pulling my hair out of my scalp from the frustration. But finally, as almost all hope was lost, some knowledge was bestowed upon me. What if I looped through the program while checking the input and query selector? I tried that and in theory, it worked. All the logic aligned and there wasn't any error message in the console. So I tried the button on my website and it worked. The only problem was that no matter how many answers were correct, it still said, "You scored 0 out of 12!"</p>
+            <p>So image a little kid who studied all the pages and took the quiz, getting every answer correct. His heart would shatter into millions of pieces and those millions of pieces would shatter into millions of pieces each if he found out that he got "0 out of 12". This was quite a large problem. I sat there for another long period of time, trying to debug it. And after a good amount of rereading the code, I found out the problem. I used ' instead of `. That's it?! Just a typo wasting all my time?! I guess that's how coding is...</p>
+            <img src="Images of Animals/Trial3.png">
+        </section>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <section class="Code">
+            <h2>Code</h2>
+            <h4>Code Flow</h4>
+            <p>So I write an initial python script and that will generate html pages for me. With those html pages (and css), I can push it to my GitHub repositories and therefore end up with a website.</p>
+            <img src="Images of Animals/Codeflow.png">
+            <h4>Python Scripts</h4>
+            <p>I have a spreadsheet (.csv) filled with the descriptions of the animals, and any other crucial information for each exhibit page. I can access that through my python script and then be able to generate exhibit pages. I have two functions: generate_index_page and generate_exhibit_page, the uses of which are pretty self-explanatory.</p>
+            <img src="Images of Animals/PythonScripts.png">
+            <h4>Site Generator Program</h4>
+            <div class="row">
+                <div class="column" style="text-align:center;">
+                    <h5>Index Page Function</h5>
+                    <img src="Images of Animals/idxpg.png">
+                    <p>This code is pretty simple. It just creates the clickable links to the exhibit pages from the main page. Then, I just write out some basic html to make the website work.</p>
+                </div>
+                <div class="column" style="text-align:center;">
+                    <h5>Exhibit Page Function</h5>
+                    <img src="Images of Animals/xhbpg.png">
+                    <p>This code is a little more complicated. It accesses the spreadsheet (.csv file) and finds the descriptions and images. Then, the code plugs in those values into the html code so that the exhibit pages are generated. Lastly, there's a little bit of code at the end for navigation.</p>
+                </div>
+            </div>
+
+        </section>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <section class="CSV">
+            <h2>CSV and Databasing</h2>
+            <h4>Why is Google Sheets Helpful?</h4>
+            <p>Instead of writing the descriptions in the coding application and all the terms, a spreadsheet is much more orgasinsed, where you can have designated columns for different things. Additionally, Google Sheets can check grammar mistakes as well and it can autofill information, saving a lot of time.</p>
+            <img src="Images of Animals/spreadsheet.png">
+            <h4>What is a CSV File and Why does it Matter?</h4>
+            <p>A python script can't read a spread sheet in Google Sheets alone so we need to convert it into a different format. A CSV file, or "comma seperated values", let's the python program read it just like we would a normal Google Sheet. Once it encounters a comma, it stops, signifying that there is a section break.</p>
+            <img src="Images of Animals/bigCsvGibberish.png">
+            <h4>How Can Google Sheets Create Multiple Websites at Once?</h4>
+            <p>You can download multiple tabs into different CSV files and with those, all you need to do is plug the name into my current python program. This way, html files will all be generated, each completely different and reliant on the information you put in the sheet.</p>
+            <h4>Potential Further Than This Project</h4>
+            <p>This CSV databasing can be sold as a service (SAAS - Software as a Service) where others can generate a website through my service (aka. this program). This has huge potential and can be sold to make a lot of passive income. This also makes website generation for the general public much easier.</p>
+        </section>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <section class="Interesting Code Solutions">
+            <h2>Interesting Code Solutions</h2>
+            <h4>Map Coordinates</h4>
+            <p>This basically turns the image into a map with coordinates that show an area in which someone can click that will lead them to a certain exhibit. It works with creating a rectagular "box" in which each pixel leads to the same exhibit.</p>
+            <img src="Images of Animals/mapcoords.png">
+            <h4>Forward/Back Buttons</h4>
+            <p>Buttons again... But the logic behind these is pretty extraordinary. The previous button will take the ordinal place of the current exhibit and subtract that by one, therefore creating a link to the previous exhibit. The next button will do the opposite, adding one to the ordinal place and linking to the next exhibit. However, the first exhibit cannot go back and the last cannot go forward so we give conditionals that apply to the exhibits that are not first/last respectively.</p>
+            <img src="Images of Animals/pvnx.png">
+            <h4>How Does CSS Work?</h4>
+            <p>CSS is a styling language for html code. It can change the font, color, size of images, and many other things to make a website look more beautiful and appealing to the user.</p>
+            <p>A website with CSS vs. without:</p>
+            <img src="Images of Animals/cssComparison.png">
+        </section>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <section class="Design Plan">
+            <h2>Design Plan</h2>
+            <h4>The Importance</h4>
+            <p>A design plan is always important because it keeps ideas organized and helps you know what your page should look like even though you have no code. I used Google Slides for my design plan but any software design tool can work. It will keep your goals aligned and make it much easier to visualize the overall page flow. I had a design plan for each page, including this one.</p>
+            <img src="Images of Animals/designplan.png">
+        </section>
+        <br>
+        <a class="ex-btn" href="Homepage.html">Back to Home</a>
+        
+    </body>
+</html>

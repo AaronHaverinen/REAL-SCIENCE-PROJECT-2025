@@ -251,7 +251,7 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
     stylesheet_link = (
         f'<link rel = "stylesheet" href = "{exhibit["stylesheet"]}">' if exhibit["stylesheet"] else ""
     )
-    
+
 
     #build previous/next navi
     nav_html = '<div style="margin-top: 20px;">\n'
@@ -299,6 +299,7 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
 </html>
 """
     return html_content
+    #Collapsed Code to Save Space
 
 def main():
     global exhibits

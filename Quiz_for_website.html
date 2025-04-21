@@ -44,10 +44,40 @@
                     correct: 3
                 },
                 {
-                    question: "How did Porifera get its name?",
-                    options: ["Because of its pores","Because it's poor","A pauper without vocabulary named it", "Scientists were drunk"],
+                    question: "The Giant Pacific Octopus is in which phylum?",
+                    options: ["Enteroctopus","Dofleini","Mollusca", "Xestospongia"],
+                    correct: 2
+                },
+                {
+                    question: "Fish are divided into which two super-super-classes?",
+                    options: ["Jawed & Jawless","Bony & Cartilaginous","Ray finned & Lobe finned", "Coelacanth vs Blue Tang"],
                     correct: 0
                 },
+                {
+                    question: "Amphibians and Reptiles are together known as what?",
+                    options: ["Hermes","Chordata","Animalia", "Herps"],
+                    correct: 3
+                },
+                {
+                    question: "Echinodermata circulate what?",
+                    options: ["Other Echinodermata","Blood","Water", "Hemoglobin"],
+                    correct: 2
+                },
+                {
+                    question: "Which of the following was an adaptation birds made for easier flight?",
+                    options: ["Lymph Nodes","Hollow Bones","Warm Blood", "B & T Cells"],
+                    correct: 1
+                },
+                {
+                    question: "Amphibians use what two to breathe",
+                    options: ["Skin and Heart","Skin and Lungs","Eyes and Lungs", "Mouth and Skin"],
+                    correct: 1
+                },
+                {
+                    question: "BONUS (that counts to the score): How many scores of scales does the King Cobra have on average?",
+                    options: ["50-100","100-1000","1000-2000", "25-50"],
+                    correct: 0
+                }
             ]
 
             const QuizForm = document.getElementById("QuizForm"); //Populate Quiz
@@ -106,7 +136,7 @@
                     score++
                 } 
             })
-            resultEl.textContent = `You scored ${score} out of ${QuizData.length}`; // Display the score
+            resultEl.textContent = `You scored ${score} out of ${QuizData.length}!`; // Display the score
         });
         
             
