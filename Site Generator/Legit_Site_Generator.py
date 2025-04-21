@@ -7,7 +7,7 @@ from pathlib import Path
 output_dir = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025/Site Generator")
 csv_path = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025/Site Generator/Black Magic website - San Diego Info.csv")
 required_cols = {"filemname", "title", "description", "image", "taxonomy", "stylesheet"}
-image_root = str(output_dir) + "/Images of Animals/"
+image_root = "/Images of Animals/"
 print(csv_path)
 
 #Create the directory if it doesn't exist
