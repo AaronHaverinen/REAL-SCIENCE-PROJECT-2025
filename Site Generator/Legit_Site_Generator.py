@@ -246,7 +246,7 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
         f'<img src="{src}" alt="{exhibit["title"]} image">' for src in exhibit["image"]
     )
     tax_html = "".join(
-        f'<img sr="{src}" alt="{exhibit["title"]} taxonomy">' for src  in exhibit["taxonomy"]
+        f'<img src="{src}" alt="{exhibit["title"]} taxonomy">' for src  in exhibit["taxonomy"]
     )
     stylesheet_link = (
         f'<link rel = "stylesheet" href = "{exhibit["stylesheet"]}">' if exhibit["stylesheet"] else ""
@@ -293,7 +293,7 @@ def generate_exhibit_page(exhibit, index, exhibits_count):
     </div class>
     <p></p>
 
-    <a class="exhib-btn" href="index.html">Back to Main Page</a>
+    <a class="exhib-btn" href="index.html">Back to Main Page</a> <a class="exhib-btn" href="info.html">Definitions and Key Terms</a>
 
 </body>
 </html>

@@ -33,6 +33,16 @@
                     options: ["Reptiles","Annelida","Arthropoda", "Mammals"],
                     correct: 2
                 },
+                {
+                    question: "How did Porifera get its name?",
+                    options: ["Because of its pores","Because it's poor","A pauper without vocabulary named it", "Scientists were drunk"],
+                    correct: 0
+                },
+                {
+                    question: "How did Porifera get its name?",
+                    options: ["Because of its pores","Because it's poor","A pauper without vocabulary named it", "Scientists were drunk"],
+                    correct: 0
+                },
             ]
 
             const QuizForm = document.getElementById("QuizForm"); //Populate Quiz
@@ -75,15 +85,23 @@
         QuizForm.appendChild(submitBtn);
 
         submitBtn.addEventListener("click",() =>{
-            const selected = QuizForm[`q${idx}`].value;
-            score = 0; // Reset the score on each submit
+            //const selected = QuizForm[`q${idx}`].value;
+            //score = 0; // Reset the score on each submit
+            //QuizData.forEach((q, idx) => {
+                //if (selected !== undefined && parseInt(selected, 10) === q.correct) {
+                    //score ++;
+                //}
+            //});
+            score = 0;
             QuizData.forEach((q, idx) => {
-                if (selected !== undefined && parseInt(selected, 10) === q.correct) {
-                    score ++;
-                }
-            });
+                const answer = document.querySelector(
+                    'input[name="q${idx}"]:checked'
+                );
+                if (answer && Number(answer.value) === q.correct){
+                    score++
+                } 
+            })
             resultEl.textContent = `You scored ${score} out of ${QuizData.length}`; // Display the score
-
         });
         
             
