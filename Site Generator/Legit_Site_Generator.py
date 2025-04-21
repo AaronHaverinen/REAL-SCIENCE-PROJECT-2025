@@ -207,7 +207,7 @@ def generate_index_page(exhibits: list[dict]) -> str:
             <h1>Welcome To The Haverinen Animal Education Website</h1>
             
             
-            <img src="{image_root}MAYBEZOOMAP.png" usemap="#zoomap">
+            <img src="Images of Animals/MAYBEZOOMAP.png" usemap="#zoomap">
             <map name="zoomap">
                 <area shape="rect" coords="35, 250, 80, 320" href="exhibit 1.html">
                 <area shape="rect" coords="82, 250, 127, 320" href="exhibit 2.html">
