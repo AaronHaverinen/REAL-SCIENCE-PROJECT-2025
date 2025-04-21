@@ -48,8 +48,14 @@ img {
     margin-top: 2rem;
     padding: 2rem 3rem;
     width: min(50vw, 300px);
-    border-radius: 1rem;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 0.65rem;
+    border-radius: 0.5rem;
+    
+    
   }
   .exhib-btn:hover {
     background-color: #95b1ff;

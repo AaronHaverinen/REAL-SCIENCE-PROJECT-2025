@@ -4,10 +4,10 @@ import ast
 from pathlib import Path
 
 #Set the optupt directory to your specified path
-output_dir = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025/Site Generator")
+output_dir = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025")
 csv_path = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025/Site Generator/Black Magic website - San Diego Info.csv")
 required_cols = {"filemname", "title", "description", "image", "taxonomy", "stylesheet"}
-image_root = "/Images of Animals/"
+image_root = str (output_dir) + "/Images of Animals/"
 print(csv_path)
 
 #Create the directory if it doesn't exist
@@ -207,7 +207,7 @@ def generate_index_page(exhibits: list[dict]) -> str:
             <h1>Welcome To The Haverinen Animal Education Website</h1>
             
             
-            <img src="Images of Animals/MAYBEZOOMAP.png" usemap="#zoomap">
+            <img src="{image_root}MAYBEZOOMAP.png" usemap="#zoomap">
             <map name="zoomap">
                 <area shape="rect" coords="35, 250, 80, 320" href="exhibit 1.html">
                 <area shape="rect" coords="82, 250, 127, 320" href="exhibit 2.html">
