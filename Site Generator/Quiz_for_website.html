@@ -39,6 +39,11 @@
                     correct: 0
                 },
                 {
+                    question: "What are annelida?",
+                    options: ["Animals like worms","Things that die when exposed to too much sun","Crawly things", "All of the Above"],
+                    correct: 3
+                },
+                {
                     question: "How did Porifera get its name?",
                     options: ["Because of its pores","Because it's poor","A pauper without vocabulary named it", "Scientists were drunk"],
                     correct: 0
@@ -95,7 +100,7 @@
             score = 0;
             QuizData.forEach((q, idx) => {
                 const answer = document.querySelector(
-                    'input[name="q${idx}"]:checked'
+                    `input[name="q${idx}"]:checked`
                 );
                 if (answer && Number(answer.value) === q.correct){
                     score++
