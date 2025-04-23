@@ -4,7 +4,7 @@ import ast
 from pathlib import Path
 
 #Set the optupt directory to your specified path
-output_dir = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025")
+output_dir = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025/Site Generator")
 csv_path = Path("/Users/aaronhaverinen/Documents/Science Project Folder 2025/Site Generator/Black Magic website - San Diego Info.csv")
 required_cols = {"filemname", "title", "description", "image", "taxonomy", "stylesheet"}
 image_root = "/"
@@ -207,19 +207,19 @@ def generate_index_page(exhibits: list[dict]) -> str:
             <h1>Welcome To The Haverinen Animal Education Website</h1>
             
             
-            <img src="Images of Animals/MAYBEZOOMAP.png" usemap="#zoomap">
+            <img src="Images of Animals/ZOOMAP.png" usemap="#zoomap">
             <map name="zoomap">
-                <area shape="rect" coords="35, 250, 80, 320" href="exhibit 1.html">
-                <area shape="rect" coords="82, 250, 127, 320" href="exhibit 2.html">
-                <area shape="rect" coords="130, 250, 175, 320" href="exhibit 3.html">
-                <area shape="rect" coords="50, 20, 150, 90" href="exhibit 4.html">
-                <area shape="rect" coords="220, 270, 310, 365" href="exhibit 5.html">
-                <area shape="rect" coords="310, 270, 400, 365" href="exhibit 6.html">
-                <area shape="rect" coords="220, 70, 340, 170" href="exhibit 7.html">
-                <area shape="rect" coords="370, 140, 420, 220" href="exhibit 8.html">
-                <area shape="rect" coords="420, 140, 470, 220" href="exhibit 9.html">
-                <area shape="rect" coords="470, 10, 560, 80" href="exhibit 10.html">
-                <area shape="rect" coords="630, 80, 700, 130" href="exhibit 11.html">
+                <area shape="rect" coords="40, 100, 120, 170" href="exhibit 1.html">
+                <area shape="rect" coords="170, 100, 240, 170" href="exhibit 2.html">
+                <area shape="rect" coords="250, 25, 330, 100" href="exhibit 3.html">
+                <area shape="rect" coords="65, 190, 150, 270" href="exhibit 4.html">
+                <area shape="rect" coords="45, 300, 130, 350" href="exhibit 5.html">
+                <area shape="rect" coords="80, 365, 160, 440" href="exhibit 6.html">
+                <area shape="rect" coords="200, 230, 270, 340" href="exhibit 7.html">
+                <area shape="rect" coords="320, 325, 425, 425" href="exhibit 8.html">
+                <area shape="rect" coords="320, 140, 390, 250" href="exhibit 9.html">
+                <area shape="rect" coords="465, 215, 590, 305" href="exhibit 10.html">
+                <area shape="rect" coords="490, 5, 590, 70" href="exhibit 11.html">
             </map>
             <p>Welcome to our interactive zoo interface of the HAEW. You can click anywhere on the map above to learn about animals. Or, you can go to the section below to see the exhibits if you don't feel like trying to find the correct place on the map. Once you think that you've learned enough, you can check your knowledge with a little quiz at the bottom of the page. You will thoroughly enjoy gazing at and learning about these eleven unique animals.</p>
             <section class="exhibits">
